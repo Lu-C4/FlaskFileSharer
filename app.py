@@ -34,7 +34,7 @@ def upload_file():
     # Get the session code from the session object
     session_code = session.get('session_code')
     if not session_code:
-        return jsonify({'error': 'Session code not found'}), 400
+        return jsonify({'   error': 'Session code not found'}), 400
 
     session_folder = os.path.join(app.config['UPLOAD_FOLDER'], session_code)
     os.makedirs(session_folder, exist_ok=True)
